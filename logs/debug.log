@@ -1,0 +1,68 @@
+2022-07-20 17:09:34 [restartedMain] INFO  c.l.s.SpringdatabaseApplication -
+                Starting SpringdatabaseApplication using Java 11.0.15 on aditya-G7-7588 with PID 47980 (/home/aditya/Downloads/Part2Bootcamp-master/target/classes started by aditya in /home/aditya/Downloads/Part2Bootcamp-master)
+2022-07-20 17:09:34 [restartedMain] DEBUG c.l.s.SpringdatabaseApplication -
+                Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-20 17:09:34 [restartedMain] INFO  c.l.s.SpringdatabaseApplication -
+                No active profile set, falling back to 1 default profile: "default"
+2022-07-20 17:09:44 [restartedMain] INFO  c.l.s.SpringdatabaseApplication -
+                Started SpringdatabaseApplication in 12.564 seconds (JVM running for 21.186)
+2022-07-20 17:10:52 [http-nio-8080-exec-2] INFO  c.l.s.kafka.JsonKafkaProducer -
+                Message sent -> {"engID":15,"userName":"Abhiram","email":"Abhiram@email.com"}
+2022-07-20 17:10:52 [http-nio-8080-exec-2] INFO  c.l.s.kafka.JsonKafkaProducer -
+                Message sent -> {"engID":15,"userName":"Likhitha","email":"Likhitha@email.com"}
+2022-07-20 17:10:52 [http-nio-8080-exec-2] INFO  c.l.s.kafka.JsonKafkaProducer -
+                Message sent -> {"engID":15,"userName":"Aatiq","email":"Aatiq@email.com"}
+2022-07-20 17:10:52 [http-nio-8080-exec-2] INFO  c.l.s.kafka.JsonKafkaProducer -
+                Message sent -> {"engID":15,"userName":"Sushant","email":"Sushant@email.com"}
+2022-07-20 17:10:52 [http-nio-8080-exec-2] INFO  c.l.s.kafka.JsonKafkaProducer -
+                Message sent -> {"engID":15,"userName":"Aditya","email":"Aditya@email.com"}
+2022-07-20 17:10:52 [http-nio-8080-exec-2] INFO  c.l.s.kafka.JsonKafkaProducer -
+                Message sent -> {"engID":15,"userName":"honey Singh","email":"yoyo@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.kafka.JsonKafkaConsumer -
+                Json message received -> {"engID":15,"userName":"Abhiram","email":"Abhiram@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.k.JsonKafkaProducerDownstream -
+                Message sent -> {"subject_template":"Hi Abhiram","engID":15,"body_template":"Hey Abhiram@email.com, 100% tax on all purchases","email":"Abhiram@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.kafka.JsonKafkaConsumer -
+                Json message received -> {"engID":15,"userName":"Likhitha","email":"Likhitha@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.k.JsonKafkaProducerDownstream -
+                Message sent -> {"subject_template":"Hi Likhitha","engID":15,"body_template":"Hey Likhitha@email.com, 100% tax on all purchases","email":"Likhitha@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.kafka.JsonKafkaConsumer -
+                Json message received -> {"engID":15,"userName":"Aatiq","email":"Aatiq@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.k.JsonKafkaProducerDownstream -
+                Message sent -> {"subject_template":"Hi Aatiq","engID":15,"body_template":"Hey Aatiq@email.com, 100% tax on all purchases","email":"Aatiq@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.kafka.JsonKafkaConsumer -
+                Json message received -> {"engID":15,"userName":"Sushant","email":"Sushant@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.k.JsonKafkaProducerDownstream -
+                Message sent -> {"subject_template":"Hi Sushant","engID":15,"body_template":"Hey Sushant@email.com, 100% tax on all purchases","email":"Sushant@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.kafka.JsonKafkaConsumer -
+                Json message received -> {"engID":15,"userName":"Aditya","email":"Aditya@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.k.JsonKafkaProducerDownstream -
+                Message sent -> {"subject_template":"Hi Aditya","engID":15,"body_template":"Hey Aditya@email.com, 100% tax on all purchases","email":"Aditya@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.kafka.JsonKafkaConsumer -
+                Json message received -> {"engID":15,"userName":"honey Singh","email":"yoyo@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.s.k.JsonKafkaProducerDownstream -
+                Message sent -> {"subject_template":"Hi honey Singh","engID":15,"body_template":"Hey yoyo@email.com, 100% tax on all purchases","email":"yoyo@email.com"}
+2022-07-20 17:10:52 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.l.s.kafka.kafkaConsumerDownstream -
+                Json message received -> {"subject_template":"Hi Abhiram","engID":15,"body_template":"Hey Abhiram@email.com, 100% tax on all purchases","email":"Abhiram@email.com"}
+2022-07-20 17:10:55 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] DEBUG c.l.s.kafka.kafkaConsumerDownstream -
+                Success
+2022-07-20 17:10:55 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.l.s.kafka.kafkaConsumerDownstream -
+                Json message received -> {"subject_template":"Hi Likhitha","engID":15,"body_template":"Hey Likhitha@email.com, 100% tax on all purchases","email":"Likhitha@email.com"}
+2022-07-20 17:10:57 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] DEBUG c.l.s.kafka.kafkaConsumerDownstream -
+                Success
+2022-07-20 17:10:57 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.l.s.kafka.kafkaConsumerDownstream -
+                Json message received -> {"subject_template":"Hi Aatiq","engID":15,"body_template":"Hey Aatiq@email.com, 100% tax on all purchases","email":"Aatiq@email.com"}
+2022-07-20 17:10:58 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] DEBUG c.l.s.kafka.kafkaConsumerDownstream -
+                Success
+2022-07-20 17:10:58 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.l.s.kafka.kafkaConsumerDownstream -
+                Json message received -> {"subject_template":"Hi Sushant","engID":15,"body_template":"Hey Sushant@email.com, 100% tax on all purchases","email":"Sushant@email.com"}
+2022-07-20 17:11:01 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] DEBUG c.l.s.kafka.kafkaConsumerDownstream -
+                Success
+2022-07-20 17:11:01 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.l.s.kafka.kafkaConsumerDownstream -
+                Json message received -> {"subject_template":"Hi Aditya","engID":15,"body_template":"Hey Aditya@email.com, 100% tax on all purchases","email":"Aditya@email.com"}
+2022-07-20 17:11:02 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] DEBUG c.l.s.kafka.kafkaConsumerDownstream -
+                Success
+2022-07-20 17:11:02 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.l.s.kafka.kafkaConsumerDownstream -
+                Json message received -> {"subject_template":"Hi honey Singh","engID":15,"body_template":"Hey yoyo@email.com, 100% tax on all purchases","email":"yoyo@email.com"}
+2022-07-20 17:11:04 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] DEBUG c.l.s.kafka.kafkaConsumerDownstream -
+                Success
