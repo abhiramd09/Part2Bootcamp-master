@@ -74,12 +74,11 @@ public class CustomerController {
 
             }
             customerRepo.save(customer1);
-            for(int i = 0; i<userList.size();++i)
-            {
+            for (UserList list : userList) {
                 JSONObject obj = new JSONObject();
-                obj.put("userName",userList.get(i).getUserName());
+                obj.put("userName", list.getUserName());
                 obj.put("engID", customer1.getEngid());
-                obj.put("email",userList.get(i).getEmail());
+                obj.put("email", list.getEmail());
                 kafkaProducer.sendMessage(obj);
             }
             return ResponseEntity.ok("JSON Message sent to Kafka Topic");
@@ -93,7 +92,7 @@ public class CustomerController {
     public ResponseEntity<String> getAllCustomers(){
         try {
             List<Customer> list = customerRepo.findAll();
-            if(list.isEmpty() || list.size()==0) {
+            if(list.isEmpty()) {
                 return ResponseEntity.badRequest().body("No content");
             }
             //return new ResponseEntity<List<Customer>>(list, HttpStatus.OK);

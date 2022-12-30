@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringdatabaseApplication {
 
 	public static void main(String[] args) {
-		PropertyConfigurator.configure("/home/aditya/Downloads/Part2Bootcamp-master/src/main/resources/log4j.properties");
+		PropertyConfigurator.configure("/home/abhiram/Downloads/microservices/src/main/resources/log4j.properties");
 		SpringApplication.run(SpringdatabaseApplication.class, args);
 	}
 
